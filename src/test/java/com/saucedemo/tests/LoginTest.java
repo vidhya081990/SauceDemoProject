@@ -10,7 +10,7 @@ public class LoginTest extends BaseTest {
 
 	@Test(dataProvider = "validUser", dataProviderClass = DataProviderUtility.class, priority = 1)
 	
-	//Positive Scenario + Application local storage + DataPr0vider
+	//Positive Scenario + Application local storage + DataProvider
 	public void loginFunctionalityTest(String username, String password) {
 
 		productsPage = loginPage.login(username, password);
@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest {
 		productsPage.clickLogOut();
 
 	}
-	//Negative Scenario + Overriding getTxt()
+	//Negative Scenario + Overriding getText()
 	@Test(dataProvider = "inValidUser", dataProviderClass = DataProviderUtility.class, priority = 2)
 
 	public void InvalidloginTest(String username, String password, String errorText) {
