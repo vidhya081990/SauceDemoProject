@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite  >
+<suite name="SauceDemoSuite">
+  <test thread-count="5"  verbose="5" name="ProductTest">
+  	<parameter name="username" value = "standard_user" />
+  	<parameter name="password" value = "secret_sauce" />
+    <classes>
+      <class name="com.saucedemo.tests.ProductTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5"  verbose="5" name="LoginTest">
+    <classes>
+      <class name="com.saucedemo.tests.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
